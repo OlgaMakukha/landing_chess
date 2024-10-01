@@ -58,7 +58,7 @@
     transform: translate(-50%, -50%) rotate(180deg);
     width: 10px;
     height: 18px;
-    background-image: url('/img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

@@ -1,9 +1,9 @@
-@import url(/style/main_screen.css);
-@import url(/style/call.css);
-@import url(/style/about.css);
-@import url(/style/stages.css);
-@import url(/style/participants.css);
-@import url(/style/footer.css);
+@import url(main_screen.css);
+@import url(call.css);
+@import url(about.css);
+@import url(stages.css);
+@import url(participants.css);
+@import url(footer.css);
 
 :root {
     --font-family: "Golos Text", sans-serif;

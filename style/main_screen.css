@@ -7,7 +7,7 @@
     width: 100vw;
     min-height: 761px;
     padding: 0 20px;
-    background: url('/img/main_bg.png') no-repeat center bottom;
+    background: url('../img/main_bg.png') no-repeat center bottom;
     background-size: auto;
 }
 
@@ -18,7 +18,7 @@
     bottom: 10px;
     right: calc(54vw - 400px);
     z-index: 1;
-    background: url('/img/chess_big.png') no-repeat center bottom;
+    background: url('../img/chess_big.png') no-repeat center bottom;
     background-size: contain;
 }
 
@@ -29,7 +29,7 @@
     bottom: 80px;
     right: calc(33vw - 400px);
     z-index: 2;
-    background: url('/img/chess_small.png') no-repeat right bottom;
+    background: url('../img/chess_small.png') no-repeat right bottom;
     background-size: contain;
 }
 
