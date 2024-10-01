@@ -1,0 +1,24 @@
+.footer {
+    padding: 4rem 20px 7.2rem 20px;
+    background-color: var(--color-broun);
+}
+
+.footer__text {
+    font-size: 1.6rem;
+    color: var(--color-dark);
+}
+
+.footer__runnig__line {
+    bottom: 149px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 4rem 20px 6rem 20px;
+        background-color: var(--color-broun);
+    }
+
+    .footer__runnig__line {
+        bottom: 127px;
+    }
+}

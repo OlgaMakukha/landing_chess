@@ -1,0 +1,148 @@
+.about {
+    padding: 0 20px;
+    margin-bottom: 11.6rem;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: -10px;
+}
+
+.about__image {
+    position: relative;
+    top: -47px;
+    left: -17px;
+}
+
+.about__image img {
+    width: 52.8rem;
+    height: 56.9rem;
+    background-size: contain;
+}
+
+.about__content h3 {
+    margin-bottom: 6.2rem;
+}
+
+.about__content h3 span {
+    color: var(--color-red);
+    font-weight: 800;
+}
+
+.about__table {
+    width: 100%;
+    max-width: 704px;
+    margin-bottom: 4.8rem;
+    font-size: 2rem;
+    line-height: 120%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.about__table td {
+    padding: 1.6rem 0;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+.about__table tr:last-of-type td {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.about__table tr:first-of-type td {
+    padding-top: 0;
+}
+
+.about__table td:first-of-type {
+    width: 43%;
+    border-right: 2px solid #d0d0d0;
+    color: rgba(49, 49, 49, 0.7);
+}
+
+.about__table td:last-of-type {
+    padding-left: 1.6rem;
+    font-weight: 700;
+}
+
+.about__content p {
+    color: var(--color-blue);
+    font-weight: 400;
+}
+
+.about__cell-crossed {
+    text-decoration: line-through;
+    text-decoration-color: var(--color-red);
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 980px) {
+    .about__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .about__table {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about__image {
+        top: 0;
+        left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about__table,
+    .about__table tbody,
+    .about__table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .about__table td {
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid #d0d0d0;
+    }
+
+    .about__table td:first-of-type,
+    .about__table tr:last-of-type td:first-of-type {
+        border-bottom: none;
+        padding-top: 0;
+        padding-bottom: 1.6rem;
+    }
+
+    .about__table td:first-of-type {
+        border-right: none;
+    }
+
+    .about__table tr {
+        margin-bottom: 2rem;
+    }
+
+    .about__table td:last-of-type {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .about__table tr:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about__content h3 {
+        max-width: 335px;
+    }
+
+    .about__image img {
+        width: 335px;
+        height: 402px;
+        margin: 0 auto;
+    }
+}
