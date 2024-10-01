@@ -118,6 +118,7 @@
     }
 
     .about__table td:first-of-type {
+        width: 100%;
         border-right: none;
     }
 
