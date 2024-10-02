@@ -1,26 +1,16 @@
 const text = document.getElementById('call__text--none');
-const containerSpan = document.querySelector('.call__text--replace');
+const imgWrapper = document.querySelector('.call__img');
+const textWrapper = document.querySelector('.call__text');
 
-function handleResize() {
+function moveText() {
     const windowWidth = window.innerWidth;
-    
-    if (windowWidth <= 980 && windowWidth >= 300) {
-        const clonedText = text.cloneNode(true);
 
-        const styles = window.getComputedStyle(text);
-        clonedText.style.cssText = styles.cssText;
-
-        containerSpan.innerHTML = '';
-        containerSpan.appendChild(clonedText);
-        containerSpan.style.display = 'block';
-        
-        text.style.display = 'none';
+    if (windowWidth <= 980) {
+        imgWrapper.after(text);
     } else {
-        text.style.display = 'inline';
-        containerSpan.style.display = 'none';
+        textWrapper.append(text);
     }
 }
 
-handleResize();
-
-window.addEventListener('resize', handleResize);
+moveText();
+window.addEventListener('resize', moveText);

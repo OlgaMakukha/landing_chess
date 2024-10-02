@@ -4,8 +4,14 @@
 }
 
 .about__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: start;
     margin-left: -10px;
 }
@@ -73,6 +79,7 @@
 
 .about__cell-crossed {
     text-decoration: line-through;
+    -webkit-text-decoration-color: var(--color-red);
     text-decoration-color: var(--color-red);
     margin-right: 12px;
 }

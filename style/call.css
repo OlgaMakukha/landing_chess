@@ -3,9 +3,15 @@
 }
 
 .call__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -22,11 +28,6 @@
     margin-left: auto;
 }
 
-.call__text--replace {
-    font-family: 'Merriweather', sans-serif;
-    font-size: 3.8rem;
-}
-
 @media screen and (max-width: 980px) {
     .call__wrapper {
         flex-direction: column;
@@ -40,6 +41,7 @@
 
     .call__text--replace {
         max-width: 764px;
+        font-family: 'Merriweather', sans-serif;
         font-size: 3.6rem;
         text-transform: uppercase;
     }
